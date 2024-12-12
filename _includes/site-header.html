@@ -1,8 +1,22 @@
-<header class="header">
+<!-- <header class="header">
   <div class="container">
     {% if site.logo %}{% include site-logo.html %}{% endif %}
 
     {% include nav-header.html %}
+  </div>
+
+  {% include site-feature.html %}
+
+</header> -->
+
+<header class="header">
+  <div class="container">
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
+    {% if page.layout=='page_personal' %}
+      {% include nav-header-personal.html %}
+    {% else %}
+      {% include nav-header.html %}
+    {% endif %}
   </div>
 
   {% include site-feature.html %}

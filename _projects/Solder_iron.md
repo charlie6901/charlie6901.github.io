@@ -1,6 +1,6 @@
 ---
-title: FLIR ZoomR
-description: FLIR ZoomR Camera Capture System
+title: Soldering Iron
+description: Modeling and Simulation of a Soldering Iron
 categories:
 - General
 # feature_image: "https://picsum.photos/2560/600?image=872"

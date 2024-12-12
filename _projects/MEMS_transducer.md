@@ -1,5 +1,6 @@
 ---
 title: Ultrasound MEMS Transducer
+description: Design, fabrication, application of a capacitive membrane based ultrasound MEMS transducer
 categories:
 - General
 # feature_image: "https://picsum.photos/2560/600?image=872"

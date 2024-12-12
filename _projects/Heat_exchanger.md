@@ -1,6 +1,6 @@
 ---
-title: FLIR ZoomR
-description: FLIR ZoomR Camera Capture System
+title: Heat Exchanger
+description: Modeling and Simulation of a Counterflow Heat Exchanger
 categories:
 - General
 # feature_image: "https://picsum.photos/2560/600?image=872"
