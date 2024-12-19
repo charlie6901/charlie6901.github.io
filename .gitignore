@@ -9,6 +9,7 @@ _drafts/
 .jekyll-metadata
 index_example.md
 elements_example.md
+outline.txt
 
 # Additional Ruby/bundler ignore for when you run: bundle install
 /vendor
