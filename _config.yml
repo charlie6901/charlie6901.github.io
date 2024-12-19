@@ -20,27 +20,26 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 
 # 9. Site navigation
-navigation_header:
-- title: Home
-  url: /
-- title: Projects
-  url: /projects/
-# - title: Experience
-#   url: /experience/
-# - title: Skills
-#   url: /skills/
+# personal is the default site, if no header_tag is specified in the front matter
+personal_header:
+- header_tag: "personal"
+- title: Personal Home
+  url: /personal/
 - title: Blog
   url: /blog/
 - title: Search
   url: /search/
+
+# if header_tag: portfolio is specified
+portfolio_header:
+- header_tag: "portfolio"
+- title: Home
+  url: /portfolio/
+- title: Projects
+  url: /projects/
 - title: Resume
   url: *resume
 
-personal_header:
-- title: Test personal site 1
-  url: /personal_test/
-# - title: Blogs
-#   url: /blogs_personal/
 
 
 # 3. Gem settings

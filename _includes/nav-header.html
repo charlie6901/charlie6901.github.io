@@ -1,18 +1,33 @@
-{% if site.navigation_header %}
+
+
+{% if true %}
 <nav class="nav  nav--header">
   <ul class="list  list--nav">
-    {% for item in site.navigation_header %}
+    {% if page.header_group=="portfolio" %}
+      {% for item in site.portfolio_header %}
+        {% if item.url contains '://' %}
+          {% assign url = item.url %}
+        {% else %}
+          {% assign url = item.url | relative_url %}
+        {% endif %}
 
-      {% if item.url contains '://' %}
-        {% assign url = item.url %}
-      {% else %}
-        {% assign url = item.url | relative_url %}
-      {% endif %}
+        <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+          <a href="{{ url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    {% else %}
+      {% for item in site.personal_header %}
+        {% if item.url contains '://' %}
+          {% assign url = item.url %}
+        {% else %}
+          {% assign url = item.url | relative_url %}
+        {% endif %}
 
-      <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
-        <a href="{{ url }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
+        <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+          <a href="{{ url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    {% endif %}
   </ul>
   <button class="button  button--nav" aria-label="Menu toggle">
     {% include icon.html id="nav" title="Menu" %}

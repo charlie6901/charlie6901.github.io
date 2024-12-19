@@ -6,6 +6,7 @@ title: Projects
 excerpt: "A demo of Markdown and HTML includes"
 aside: false
 layout: page
+header_group: portfolio
 ---
 
 
