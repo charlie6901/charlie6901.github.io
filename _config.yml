@@ -22,28 +22,28 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 # 9. Site navigation
 # personal is the default site, if no header_tag is specified in the front matter
 personal_header:
-- header_tag: "personal"
-- title: Personal Home
-  url: /personal/
-- title: Blog
-  url: /blog/
-- title: Search
-  url: /search/
+# header_tag: "personal"
+- title: Home
+  url: /
+# - title: Blog
+#   url: /blog/
+# - title: Search
+#   url: /search/
 
 # if header_tag: portfolio is specified
 portfolio_header:
-- header_tag: "portfolio"
+# header_tag: "portfolio"
 - title: Home
   url: /portfolio/
 - title: Projects
-  url: /projects/
+  url: /portfolio/projects/
 - title: Resume
   url: *resume
 
 
 
 # 3. Gem settings
-paginate: 5 # jekyll-paginate > items per page
+paginate: 1 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 # jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 # twitter:
@@ -67,16 +67,16 @@ mobile: (408) 887-2343
 # 4. Jekyll settings
 sass:
   style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+permalink: /:year/:title/  # Permalink style (/YYYY/MM/DD/page-name/)
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 timezone: America/Los_Angeles # Timezone for blog posts and alike
 
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    # title: Posts # Needed for Siteleaf
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    # description: "My thoughts and ideas" # The post list page content
     # Put feature_image banner with feature_text at top
     # feature_text: |
       # Welcome to the blog
