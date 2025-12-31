@@ -6,7 +6,7 @@ categories:
 excerpt_separator: <!-- more -->
 ---
 
-This second post serves little purpose. I really just wanted to get a post out in 2025 so I can say $n$ years from now that I ran a blog continuously for $(n+2)$ years instead of $n$ years.
+This second post serves little purpose. I really just wanted to get a post out in 2025 so I can say *n* years from now that I ran a blog continuously for *(n+2)* years instead of *n* years.
 
 <!-- more -->
 
